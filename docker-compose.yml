@@ -1,0 +1,8 @@
+# Optional: a local STOMP broker (ActiveMQ Classic). STOMP is on port 61613.
+# If the image name below has changed, search "activemq classic" on Docker Hub.
+services:
+  activemq:
+    image: apache/activemq-classic:latest
+    ports:
+      - "61613:61613"   # STOMP
+      - "8161:8161"     # web console (admin / admin)
